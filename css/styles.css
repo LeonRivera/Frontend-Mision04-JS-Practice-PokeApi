@@ -1,0 +1,234 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor{
+    /* max-width: 150rem; */
+    width: 90%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.contenedor-interno{
+    width: 50rem;
+    height: 70rem;
+    /* background-color: aquamarine; */
+    display: grid;
+    grid-template-rows: 48%  2% 50%;
+}
+.pantalla{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.pantalla-interna{
+    background-color: chartreuse;
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.pokemon{
+    background-color: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pokemon-interno{
+    background-color: aqua;
+    width: 95%;
+    height: 95%;
+    display: grid;
+    grid-template-rows: 15% 85%;
+}
+.pokemon-titulo{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.pokemon-image{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.pokemon-img{
+    width: 70%;
+    height: 70%;
+}
+.skills{
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills-interno{
+    background-color: teal;
+    width: 95%;
+    height: 95%;
+    display: grid;
+    grid-template-rows: 15% 85%;
+}
+.skills-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+}
+.skills-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.info-static{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.info-dynamic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.info-dynamic>h3{
+    background-color: aliceblue;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+
+    /* height: 100%; */
+}
+.herradura{
+    /* background-color: blueviolet; */
+    height: 100%;
+    justify-content: space-around;
+    display: flex;
+}
+.herradura-mayor{
+    width: 50%;
+    height: 100%;
+    background-color: pink;
+}
+.herradura-menor{
+    width: 10%;
+    height: 100%;
+    background-color: yellow;
+}
+.controles{
+    background-color: aqua;
+    display: grid;
+    grid-template-rows: 10% 70% 20%;
+    border-radius: 15px;
+}
+.control-start{
+    background-color: aquamarine;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.control-start>button{
+    width: 2rem;
+    height: 2rem;
+    background-color: black;
+    border-radius: 50%;
+}
+.control-move{
+    background-color: red;
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+}
+.cruz-control{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-control{
+    width: 17rem;
+    height: 17rem;
+    border-radius: 100%;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.circle-control>div>button{
+    background-color: black;
+    margin: 0;
+    width: 4rem;
+    height: 4rem;
+}
+.ventilacion{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.ventilacion>div>div{
+    font-size: 2rem;
+    line-height: 1rem;
+    letter-spacing: 1rem;
+    margin-left: 1rem;
+}
+.ab-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-ab{
+    width: 65%;
+    height: 20%;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: rotate(-30deg);
+    border-radius: 30px;
+}
+.container-ab>button{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    transform: rotate(30deg);
+}
+.control-click{
+    background-color: royalblue;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+}
+.control-click>button{
+    width: 4rem;
+    height: 4rem;
+    background-color: black;
+    border-radius: 50%;
+    /* margin-left: 2rem; */
+}
+.control-click>button:nth-child(2n){
+    background-color: aqua;
+    margin-left: 2rem;
+}
