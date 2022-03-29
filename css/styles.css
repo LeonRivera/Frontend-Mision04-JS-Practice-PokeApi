@@ -14,8 +14,16 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #fcfcfc;
+background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fbff85' fill-opacity='0.55' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
 }
-
+h3,h2{
+    font-family: 'Press Start 2P', cursive;
+}
+button{
+    background-color: #534F50!important;
+    
+}
 .contenedor{
     /* max-width: 150rem; */
     width: 90%;
@@ -33,36 +41,46 @@ body{
     grid-template-rows: 48%  2% 50%;
 }
 .pantalla{
-    background-color: antiquewhite;
+    background-color: #A12621;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
     border-radius: 15px;
+    -webkit-box-shadow: 0px 5px 4px 2px rgba(0,0,0,0.39); 
+box-shadow: 0px 5px 4px 2px rgba(0,0,0,0.39);
 }
 .pantalla-interna{
-    background-color: chartreuse;
-    width: 90%;
-    height: 90%;
+    width: 85%;
+
+    height: 85%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    background-color: white;
+    border-radius: 15px;
+    padding: 2rem;
+    /* padding: 3rem; */
+
+    background-color: #fcfcfc;
+background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f2b3b3' fill-opacity='0.55' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+    
 }
 .pokemon{
-    background-color: violet;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #CEB3F2;
+    border-radius: 15px;
 }
 .pokemon-interno{
-    background-color: aqua;
     width: 95%;
     height: 95%;
     display: grid;
     grid-template-rows: 15% 85%;
 }
 .pokemon-titulo{
-    background-color: blue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,19 +90,21 @@ body{
 display: flex;
 justify-content: center;
 align-items: center;
+background-color: white;
+
 }
 .pokemon-img{
     width: 70%;
     height: 70%;
 }
 .skills{
-    background-color: tomato;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
+    background-color: #FFEB73;
 }
 .skills-interno{
-    background-color: teal;
     width: 95%;
     height: 95%;
     display: grid;
@@ -94,7 +114,6 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: azure;
 }
 .skills-info{
     display: grid;
@@ -122,6 +141,7 @@ align-items: center;
 }
 .herradura{
     /* background-color: blueviolet; */
+    
     height: 100%;
     justify-content: space-around;
     display: flex;
@@ -129,21 +149,23 @@ align-items: center;
 .herradura-mayor{
     width: 50%;
     height: 100%;
-    background-color: pink;
+    background-color: #A12621;
+    
 }
 .herradura-menor{
     width: 10%;
     height: 100%;
-    background-color: yellow;
+    background-color: #A12621;
 }
 .controles{
-    background-color: aqua;
+    background-color: #A12621;
     display: grid;
     grid-template-rows: 10% 70% 20%;
     border-radius: 15px;
+    -webkit-box-shadow: 0px 5px 4px 2px rgba(0,0,0,0.39); 
+    box-shadow: 0px 5px 4px 2px rgba(0,0,0,0.39);
 }
 .control-start{
-    background-color: aquamarine;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -155,12 +177,10 @@ align-items: center;
     border-radius: 50%;
 }
 .control-move{
-    background-color: red;
     display: grid;
     grid-template-columns: 45% 10% 45%;
 }
 .cruz-control{
-    background-color: aqua;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,20 +189,41 @@ align-items: center;
     width: 17rem;
     height: 17rem;
     border-radius: 100%;
-    background-color: bisque;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    -webkit-box-shadow: 0px 5px 4px 2px rgba(0,0,0,0.39); 
+box-shadow: 0px 5px 4px 2px rgba(0,0,0,0.39);
 }
 .circle-control>div>button{
     background-color: black;
     margin: 0;
     width: 4rem;
     height: 4rem;
+    /* border: 0; */
+    padding: 0;
+}
+.circle-top>button{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.circle-med>button:nth-child(1){
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+.circle-med>button:nth-child(3){
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.circle-bot>button{
+    border-bottom-left-radius: 20px;
+
+    border-bottom-right-radius: 20px;
 }
 .ventilacion{
-    background-color: aliceblue;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -201,12 +242,13 @@ align-items: center;
 .container-ab{
     width: 65%;
     height: 20%;
-    background-color: blue;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transform: rotate(-30deg);
     border-radius: 30px;
+    -webkit-box-shadow: 0px 5px 4px 2px rgba(0,0,0,0.39); 
+box-shadow: 0px 5px 4px 2px rgba(0,0,0,0.39);
 }
 .container-ab>button{
     width: 4rem;
@@ -215,7 +257,6 @@ align-items: center;
     transform: rotate(30deg);
 }
 .control-click{
-    background-color: royalblue;
     display: flex;
     justify-content: center;
     
@@ -229,6 +270,5 @@ align-items: center;
     /* margin-left: 2rem; */
 }
 .control-click>button:nth-child(2n){
-    background-color: aqua;
     margin-left: 2rem;
 }
