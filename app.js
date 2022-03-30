@@ -9,7 +9,7 @@ let attackText = document.querySelector('.attack');
 let defenseText = document.querySelector('.defense');
 let speedText = document.querySelector('.speed');
 
-let idContador = 1;
+let idContador = 0;
 const pokemon ={
     name: '',
     hp: 0,
@@ -21,8 +21,11 @@ const pokemon ={
 
 
 document.addEventListener('DOMContentLoaded', (e) => {
+    idContador++;
     fetchData();
-    fillSkills();
+    setTimeout(() => {
+        fillSkills();
+    }, 100);
 });
 
 
@@ -32,7 +35,9 @@ btnLeft.addEventListener('click', (e) => {
         idContador--;
     }
     fetchData();
-    fillSkills();
+    setTimeout(() => {
+        fillSkills();
+    }, 100);
 });
 btnRight.addEventListener('click', (e) => {
     idContador++;
@@ -40,22 +45,22 @@ btnRight.addEventListener('click', (e) => {
     console.log(idContador);
 
     fetchData();
-    fillSkills();
+    setTimeout(() => {
+        fillSkills();
+    }, 100);
     
 });
 
-const fetchData = () => {
+function fetchData() {
 
     pokemonImage.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/${idContador}.gif`;
 
     let url = `https://pokeapi.co/api/v2/pokemon/${idContador}`
-    
+    console.log(url);
     fetch(url)
     .then(res => res.json())
     .then(data => {
 
-        console.log(data);
-        console.log(pokemon);
         pokemon.name = data.name;
         let arrayStats = data.stats;
 
@@ -76,6 +81,8 @@ const fetchData = () => {
             }
         }
     })
+
+    console.log(pokemon);
 }
 
 
